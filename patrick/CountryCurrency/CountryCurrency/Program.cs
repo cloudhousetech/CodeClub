@@ -20,16 +20,16 @@ namespace CountryCurrency
             }
             Console.WriteLine("Enter a Country");
             string countryin = Console.ReadLine();
-            string currency;
+            string currency = string.Empty;
             foreach (string[] country in countries)
             {
                 if (country[0] == countryin)
                 {
-                    currency = country[2];
-                    Console.WriteLine($"Currency for {countryin} is {currency}");
+                    currency = country[2];                   
                     break;
                 }
             }
+            Console.WriteLine($"Currency for {countryin} is {currency}");
             Console.ReadKey();
         }   
     }
