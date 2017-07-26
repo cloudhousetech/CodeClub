@@ -26,9 +26,11 @@ namespace CountryCurrency
                 if (country[0] == countryin)
                 {
                     currency = country[2];
+                    Console.WriteLine($"Currency for {countryin} is {currency}");
                     break;
                 }
             }
+            Console.ReadKey();
         }   
     }
 }
